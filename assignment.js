@@ -32,6 +32,18 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+// declaring test base number
+let baseNumber = 2
+
+// logic for multiplication of baseNumber
+// the following code does 12 "levels" if you include the zero
+// few people are interested in what baseNumber * 0 computes to
+// to not include zero, comment in line 42 + comment out line 43
+// for (i = 1; i < 13; i++) {
+for (i = 0; i < 12; i++) {
+  console.log(baseNumber * i)
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +77,30 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+// declaring variables and test case no. 1
+let numbers = [57, 13, 4, 38]
+let currentLargestNumber = 0
+
+// logic for finding the highest number in give array
+for (i = 0; i < numbers.length; i++) {
+  if (numbers[i] > currentLargestNumber) {
+    currentLargestNumber = numbers[i]
+  }
+}
+console.log(currentLargestNumber)
+
+// resetting values + array for test case no. 2
+currentLargestNumber = 0
+numbers = [3, 48, 29, 12, 18]
+
+// logic for finding the highest number in give array
+for (i = 0; i < numbers.length; i++) {
+  if (numbers[i] > currentLargestNumber) {
+    currentLargestNumber = numbers[i]
+  }
+}
+console.log(currentLargestNumber)
 
 // Add your code above this line
 
@@ -112,6 +148,55 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+// declaring variables
+let playerAChoice
+let playerBChoice
+
+// test case no. 1
+playerAChoice = "rock"
+playerBChoice = "paper"
+
+// rock, paper, scissors logic
+if (playerAChoice === "rock" && playerBChoice === "scissors" || playerAChoice === "scissors" && playerBChoice === "paper" || playerAChoice === "paper" && playerBChoice === "rock") {
+  console.log("playerA wins")
+} else if (playerBChoice === "rock" && playerAChoice === "scissors" || playerBChoice === "scissors" && playerAChoice === "paper" || playerBChoice === "paper" && playerAChoice === "rock") {
+  console.log("playerB wins")
+} else if (playerBChoice === "rock" && playerAChoice === "rock" || playerBChoice === "scissors" && playerAChoice === "scissors" || playerBChoice === "paper" && playerAChoice === "paper" ) {
+  console.log("tie")
+} else {
+  console.log("that's not how you play rock, paper, scissors")
+}
+
+// test case no. 2
+playerAChoice = "scissors"
+playerBChoice = "scissors"
+
+// rock, paper, scissors logic
+if (playerAChoice === "rock" && playerBChoice === "scissors" || playerAChoice === "scissors" && playerBChoice === "paper" || playerAChoice === "paper" && playerBChoice === "rock") {
+  console.log("playerA wins")
+} else if (playerBChoice === "rock" && playerAChoice === "scissors" || playerBChoice === "scissors" && playerAChoice === "paper" || playerBChoice === "paper" && playerAChoice === "rock") {
+  console.log("playerB wins")
+} else if (playerBChoice === "rock" && playerAChoice === "rock" || playerBChoice === "scissors" && playerAChoice === "scissors" || playerBChoice === "paper" && playerAChoice === "paper" ) {
+  console.log("tie")
+} else {
+  console.log("that's not how you play rock, paper, scissors")
+}
+
+// test case no. 3
+playerAChoice = "scissors"
+playerBChoice = "paper"
+
+// rock, paper, scissors logic
+if (playerAChoice === "rock" && playerBChoice === "scissors" || playerAChoice === "scissors" && playerBChoice === "paper" || playerAChoice === "paper" && playerBChoice === "rock") {
+  console.log("playerA wins")
+} else if (playerBChoice === "rock" && playerAChoice === "scissors" || playerBChoice === "scissors" && playerAChoice === "paper" || playerBChoice === "paper" && playerAChoice === "rock") {
+  console.log("playerB wins")
+} else if (playerBChoice === "rock" && playerAChoice === "rock" || playerBChoice === "scissors" && playerAChoice === "scissors" || playerBChoice === "paper" && playerAChoice === "paper" ) {
+  console.log("tie")
+} else {
+  console.log("that's not how you play rock, paper, scissors")
+}
 
 // Add your code above this line
 
