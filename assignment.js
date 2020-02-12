@@ -35,6 +35,9 @@ console.log('Problem 1:')
 // Add your code above this line
 
 console.log('')
+
+console.log('yo yo')
+
 console.log('-----------------')
 
 /***********
