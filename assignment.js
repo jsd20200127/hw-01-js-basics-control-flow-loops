@@ -31,7 +31,19 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+let n = 2
+for (let i = 0; i <= 12; i++) {
+  console.log(n * i)
+}
 
+console.log('OR using a while loop')
+
+let baseNumber = 2
+let i = 0
+while (i <= 12) {
+  console.log(baseNumber * i)
+  i++
+}
 // Add your code above this line
 
 console.log('')
@@ -65,6 +77,22 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+const values = [3, 48, 29, 12, 18]
+let currentLargestNumber = 0
+
+for (let i = 0; i < values.length; i++) {
+  if (values[i] < currentLargestNumber) {
+    currentLargestNumber = currentLargestNumber
+  }
+  else if (values[i] > currentLargestNumber) {
+    currentLargestNumber = values[i]
+  }
+  else {
+
+  }
+}
+console.log(currentLargestNumber)
+
 
 // Add your code above this line
 
@@ -112,6 +140,45 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+const playerAChoice = 'scissors'
+const playerBChoice = 'paper'
+
+if (playerAChoice === 'rock') {
+  if (playerBChoice === 'paper') {
+    console.log('playerB wins')
+  }
+  else if (playerBChoice === 'rock') {
+    console.log('tie')
+  }
+  else if (playerBChoice === 'scissors') {
+    console.log('palyerA wins')
+  }
+}
+else if (playerAChoice === 'paper') {
+  if (playerBChoice === 'rock') {
+    console.log('playerA wins')
+  }
+  else if (playerBChoice === 'paper') {
+    console.log('tie')
+  }
+  else if (playerBChoice === 'scissors') {
+    console.log('playerB wins')
+  }
+}
+else if (playerAChoice === 'scissors') {
+  if (playerBChoice === 'rock') {
+    console.log('playerB wins')
+  }
+  else if (playerBChoice === 'scissors') {
+    console.log('tie')
+  }
+  else if (playerBChoice === 'paper') {
+    console.log('playerA wins')
+  }
+else {
+
+}
+}
 
 // Add your code above this line
 
