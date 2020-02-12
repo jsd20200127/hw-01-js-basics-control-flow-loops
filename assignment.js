@@ -31,7 +31,10 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
-
+const baseNumber = 2
+for (let i =0; i <13; i++){
+  console.log(baseNumber*i)
+}
 // Add your code above this line
 
 console.log('')
@@ -65,6 +68,19 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+const numbers = [57, 13, 4, 38]
+let currentLargestNumber = 0
+
+for (i=0; i < numbers.length; i++){
+  // initial case to accont for negative numbers
+  if (i === 0){
+    currentLargestNumber = numbers[i]
+  }
+  if (i > 0 && numbers[i]>currentLargestNumber) {
+    currentLargestNumber = numbers[i]
+  }
+}
+console.log(currentLargestNumber)
 
 // Add your code above this line
 
@@ -112,6 +128,45 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+const playerAChoice = "scissors"
+const playerBChoice = "paper"
+
+if (playerAChoice === "rock"){
+  if (playerBChoice === "rock"){
+    console.log("tie")
+  }
+  else if (playerBChoice === "paper") {
+    console.log("playerB wins")
+  }
+  else if (playerBChoice === "scissors"){
+    console.log("playerA wins")
+  }
+}
+
+if (playerAChoice === "paper"){
+  if (playerBChoice === "rock"){
+    console.log("playerA wins")
+  }
+  else if (playerBChoice === "paper"){
+    console.log("tie")
+  }
+  else if (playerBChoice === "scissors"){
+    console.log("playerB wins")
+  }
+}
+
+if (playerAChoice === "scissors"){
+  if (playerBChoice === "rock"){
+    console.log("playerB wins")
+  }
+  else if (playerBChoice === "paper"){
+    console.log("playerA wins")
+  }
+  else if (playerBChoice === "scissors"){
+    console.log("tie")
+  }
+
+}
 
 // Add your code above this line
 
