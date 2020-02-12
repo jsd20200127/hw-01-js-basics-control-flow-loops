@@ -32,6 +32,12 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 2
+
+for (i = 0; i <= 12; i++) {
+    console.log(baseNumber * i)
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +71,18 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+let values = [3, 48, 29, 12, 18]
+let LargestNumber = values[0]
+
+for (i = 1; i < values.length; i++) {
+    if (values[i] > LargestNumber) {
+        LargestNumber = values[i]
+    }  
+}
+
+console.log(LargestNumber)
+
 
 // Add your code above this line
 
@@ -112,6 +130,38 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let playerAChoice = "scissors"
+let playerBChoice = "paper"
+let outcome = ""
+
+if (playerAChoice == "rock") {
+    if (playerBChoice == "rock") {
+        outcome = "Draw."
+    } else if (playerBChoice == "paper") {
+        outcome = "Player B won."
+    } else if (playerBChoice == "scissors") {
+        outcome = "Player A won."
+    }
+} else if (playerAChoice == "paper") {
+    if (playerBChoice == "rock") {
+        outcome = "Player A won."
+    } else if (playerBChoice == "paper") {
+        outcome = "Draw."
+    } else if (playerBChoice == "scissors") {
+        outcome = "Player B won."
+    }
+} else if (playerAChoice == "scissors") {
+    if (playerBChoice == "rock") {
+        outcome = "Player B won"
+    } else if (playerBChoice == "paper") {
+        outcome = "Player A won."
+    } else if (playerBChoice == "scissors") {
+        outcome = "Draw."
+    }
+}
+
+console.log("Result is: " + outcome)
 
 // Add your code above this line
 
