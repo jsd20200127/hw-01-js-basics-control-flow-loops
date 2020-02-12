@@ -31,6 +31,13 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+let baseNumber = 2
+
+for (let i = 0; i <=13 ; i++) {
+  product = (baseNumber * i)
+  console.log(product)
+}
+
 
 // Add your code above this line
 
@@ -65,6 +72,14 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+let array = [57, 13, 4, 38]
+function currentLargestNumber() {
+  for(let i = 0; i < array.length; i++) {
+    if(array > largestNumber[i]) {
+  currentLargestNumber[i] = array[i];
+
+  console.log(currentLargestNumber)
+}
 
 // Add your code above this line
 
@@ -112,6 +127,34 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+
+if (playerAChoice === "rock") {
+    if (playerBChoice === "scissors") {
+        console.log("player a wins!");
+    } else if (playerBChoice === "rock") {
+        console.log("tie");
+    } else {
+        console.log("player a wins!");
+    }
+} else if (playerAChoice === "paper") {
+    if (playerBChoice === "rock") {
+        console.log("player a wins!");
+    } else if (playerBChoice === "rock") {
+        console.log("player b wins!"");
+    } else {
+        console.log("tie");
+    }
+} else if (playerAChoice === "scissors") {
+    if (playerBChoice === "scissors") {
+        console.log("tie");
+    } else if (playerBChoice=== "paper") {
+        console.log("player A wins!");
+    } else {
+        console.log("player b wins!");
+    }
+
+}
 
 // Add your code above this line
 
