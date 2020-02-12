@@ -32,6 +32,16 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+const baseNumber = 2
+let product
+
+for (let i = 0; i <= 12; i++){
+
+  product = baseNumber * i
+  console.log(product)
+}
+
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +75,19 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+const numbers = [3, 48, 29, 12, 18]
+let currentLargestNumber = numbers[0]
+
+for (let i = 0; i <= numbers.length; i++){
+
+  if (currentLargestNumber < numbers[i]){
+    currentLargestNumber = numbers[i]
+  }
+}
+console.log(currentLargestNumber)
+
+
 
 // Add your code above this line
 
@@ -112,6 +135,37 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+const playerAChoice = "paper"
+const playerBChoice = "rock"
+
+function whoWins(playerA, playerB) {
+  if (playerA === 'rock') {
+    if (playerB === 'scissors') {
+    console.log("Player A wins")
+  } else {
+    console.log("Player B wins")
+    }
+}
+
+  if (playerA === 'paper') {
+    if (playerB === 'rock') {
+    console.log("Player A wins")
+  } else {
+    console.log("Player B wins")
+    }
+}
+
+  if (playerA === 'scissors') {
+    if (playerB === 'paper') {
+    console.log("Player A wins")
+  } else {
+    console.log("Player B wins")
+    }
+  }
+}
+
+whoWins(playerAChoice, playerBChoice);
 
 // Add your code above this line
 
