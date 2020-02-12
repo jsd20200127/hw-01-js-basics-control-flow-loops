@@ -31,7 +31,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+let baseNumber = 2
 
+for(i = 0; i <= 12; i ++) {
+  console.log(baseNumber * i)
+}
 // Add your code above this line
 
 console.log('')
@@ -65,7 +69,15 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+const numbers = [3, 48, 29, 12, 18]
+let largestNumber = 0
 
+for(t = 0; t < numbers.length; t++) {
+  if (numbers[t] > largestNumber) {
+    largestNumber = numbers[t]
+  }
+}
+console.log(largestNumber)
 // Add your code above this line
 
 console.log('')
@@ -112,7 +124,46 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+let inputA = 'scissors'
+let inputB = 'paper'
 
+inputA = inputA.toLowerCase();
+inputB = inputB.toLowerCase();
+
+function inputCheck() {
+  if((inputA === 'rock' || inputA === 'paper' || inputA === 'scissors') && (inputB === 'rock' || inputB === 'paper' || inputB === 'scissors')) {
+    return inputA, inputB
+  } else {
+    console.log('Error. Enter rock, paper, or scissors.')
+  }
+}
+
+inputCheck()
+
+if(inputA === inputB) {
+  console.log('Tied game, go again')
+}
+else if(inputA === 'rock') {
+  if(inputB === 'scissors') {
+    console.log('Player A won')
+  } else {
+    console.log('Player B won')
+  }
+}
+else if(inputA === 'scissors') {
+  if(inputB === 'paper') {
+    console.log('Player A won')
+  } else {
+    console.log('Player B won')
+  }
+}
+else if(inputA === 'paper') {
+  if(inputB === 'rock') {
+    console.log('Player A won')
+  } else {
+    console.log('Player B won')
+  }
+}
 // Add your code above this line
 
 console.log('')
