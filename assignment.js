@@ -31,7 +31,14 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+// variable- number
+// for loop (multiply var * i) 12 times
+let num = 2;
 
+
+for(let i = 0; i <= 12; i++){
+  console.log(num * i)
+};
 // Add your code above this line
 
 console.log('')
@@ -65,6 +72,30 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+//var array of numbers
+//var largest number in array
+//loop through the full array- array.length
+//need to register every value in array through the indexes
+//need to compare each value to find largest
+let numbers = [3, 48, 29, 12, 18];
+let currentLargestNumber = '';
+
+
+//********** using a for loop *************
+for (let i = 0; i < numbers.length; i++){
+  if(numbers[i] > currentLargestNumber){
+    currentLargestNumber = numbers[i]
+  }
+};
+console.log(currentLargestNumber);
+
+//******** using built-in JS methods *************
+//Math.max finds the highest number in group in following ()
+//you usually have to type all numbers in () after
+// adding (...) is the ES6 way to add an array instead of typing all the numbers
+
+// console.log(Math.max(...numbers));
 
 // Add your code above this line
 
@@ -112,6 +143,28 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+//var of playerAChoice
+//var of playerBChoice
+//switch statement?
+//if, else, else if statement?
+//result variable?
+
+let playerAChoice = 'scissors';
+let playerBChoice = 'rock';
+
+if (playerAChoice === playerBChoice) {
+  console.log('tie');
+} else if (playerAChoice === 'rock' && playerBChoice === 'scissors'){
+  console.log('playerA wins');
+} else if (playerAChoice === 'scissors' && playerBChoice === 'paper'){
+  console.log('playerA wins');
+} else if (playerAChoice === 'paper' && playerBChoice === 'rock'){
+  console.log('playerA wins');
+} else {
+  console.log('playerB wins');
+};
+
 
 // Add your code above this line
 
