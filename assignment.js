@@ -32,6 +32,26 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+// let baseNumber = 2
+//
+// for (i = 0; i <= 12; i++) {
+//
+//   multiplication = i * baseNumber
+//
+// }
+//
+//   console.log(multiplication)
+
+let baseNumber = 4;
+for (let i = 0; i < 13; i++) {
+  // for (let j = 0; j < 13; j++) { // dont need this line
+  let  multiply = (baseNumber *i);
+    // }
+    console.log(multiply)
+}
+
+
+ 
 // Add your code above this line
 
 console.log('')
@@ -65,6 +85,19 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+const numberList = [13, 4, 57, 38];
+let highestNumberEncountered = 0;
+for (let i = 0 ; i < numberList.length ; i++){
+  if (numberList[i] > highestNumberEncountered) {
+    highestNumberEncountered = numberList[i];
+  }
+}
+console.log("The biggest number is " + highestNumberEncountered );
+
+
+// **** Easier Way of doing the same thing ***
+// console.log(Math.max(arrayNum))
 
 // Add your code above this line
 
@@ -112,6 +145,32 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let choices = ["rock", "paper", "scissor"]
+let playerA = choices[3]
+let playerB = choices[3]
+
+if (playerA === "rock" && playerB === "rock") {
+  console.log("tie!")
+} else if (playerA === "rock" && playerB === "scissors") {
+  console.log("PlayerA wins!")
+} else if (playerA === "rock" && playerB === "paper") {
+  console.log("PlayerB wins!")
+} else if (playerA === "paper" && playerB === "paper") {
+  console.log("tie!")
+} else if (playerA === "paper" && playerB === "rock") {
+  console.log("PlayerA wins!")
+} else if (playerA === "paper" && playerB === "scissor") {
+  console.log("PlayerB wins!")
+} else if  (playerA === "scissor" && playerB === "scissor") {
+  console.log("Tie!")
+} else if (playerA === "scissor" && playerB === "paper") {
+  console.log("PlayerA wins")
+} else if (playerA === "scissor" && playerB === "rock") {
+  console.log("PlayerB wins")
+} else {
+  console.log("Fatality!")
+}
 
 // Add your code above this line
 
