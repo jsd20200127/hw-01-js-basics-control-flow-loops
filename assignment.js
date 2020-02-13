@@ -33,7 +33,7 @@ console.log('Problem 1:')
 // Add your code below this line
 let baseNumber = 2
 
-for (let i = 0; i <=13 ; i++) {
+for (let i = 0; i <=12 ; i++) {
   product = (baseNumber * i)
   console.log(product)
 }
@@ -72,14 +72,15 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
-let array = [57, 13, 4, 38]
-function currentLargestNumber() {
-  for(let i = 0; i < array.length; i++) {
-    if(array > largestNumber[i]) {
-  currentLargestNumber[i] = array[i];
+const array = [3, 48, 29, 12, 18]
+let currentLargestNumber = 0
 
-  console.log(currentLargestNumber)
+  for(i = 0; i < array.length; i++) {
+    if(array[i] > currentLargestNumber) {
+      currentLargestNumber = array[i];
 }
+}
+console.log(currentLargestNumber)
 
 // Add your code above this line
 
@@ -128,34 +129,31 @@ console.log('Problem 3:')
 
 // Add your code below this line
 
-
-if (playerAChoice === "rock") {
-    if (playerBChoice === "scissors") {
-        console.log("player a wins!");
+function playGame(playerAChoice, playerBChoice){
+  if (playerAChoice === playerBChoice) {
+      return "tie!"
+  } else if (playerAChoice === "scissors") {
+      if (playerBChoice === "paper") {
+        return "player a wins!"
     } else if (playerBChoice === "rock") {
-        console.log("tie");
-    } else {
-        console.log("player a wins!");
+        return "player b wins!"
     }
 } else if (playerAChoice === "paper") {
     if (playerBChoice === "rock") {
-        console.log("player a wins!");
-    } else if (playerBChoice === "rock") {
-        console.log("player b wins!"");
-    } else {
-        console.log("tie");
+        return "player a wins!"
+    } else if (playerBChoice === "scissors") {
+        return "player b wins!"
     }
-} else if (playerAChoice === "scissors") {
+} else if (playerAChoice === "rock") {
     if (playerBChoice === "scissors") {
-        console.log("tie");
+        return "player a wins!"
     } else if (playerBChoice=== "paper") {
-        console.log("player A wins!");
-    } else {
-        console.log("player b wins!");
+        return "player b wins!"
     }
-
 }
-
+}
+const result = playGame("rock", "paper")
+console.log(result)
 // Add your code above this line
 
 console.log('')
