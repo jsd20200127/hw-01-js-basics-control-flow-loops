@@ -136,33 +136,43 @@ console.log('Problem 3:')
 
 // Add your code below this line
 
-const playerAChoice = "paper"
-const playerBChoice = "rock"
+const playerAChoice = "scissors"
+const playerBChoice = "paper"
 
 function whoWins(playerA, playerB) {
+
   if (playerA === 'rock') {
     if (playerB === 'scissors') {
-    console.log("Player A wins")
+      console.log("Player A wins")
+  } else if (playerB === "paper") {
+      console.log("Player B wins")
   } else {
-    console.log("Player B wins")
-    }
+      console.log("It's a tie")
+  }
+
 }
 
   if (playerA === 'paper') {
     if (playerB === 'rock') {
-    console.log("Player A wins")
+      console.log("Player A wins")
+  } else if (playerB === "scissors") {
+      console.log("Player B wins")
   } else {
-    console.log("Player B wins")
-    }
+      console.log("It's a tie")
+  }
 }
 
   if (playerA === 'scissors') {
     if (playerB === 'paper') {
-    console.log("Player A wins")
+      console.log("Player A wins")
+  } else if (playerB === 'rock') {
+      console.log("Player B wins")
   } else {
-    console.log("Player B wins")
-    }
+      console.log("It's a tie")
   }
+}
+
+
 }
 
 whoWins(playerAChoice, playerBChoice);
