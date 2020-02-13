@@ -31,6 +31,13 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+let baseNumber = 2
+
+for (let i = 0; i <=12 ; i++) {
+  product = (baseNumber * i)
+  console.log(product)
+}
+
 
 // Add your code above this line
 
@@ -65,6 +72,15 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+const array = [3, 48, 29, 12, 18]
+let currentLargestNumber = 0
+
+  for(i = 0; i < array.length; i++) {
+    if(array[i] > currentLargestNumber) {
+      currentLargestNumber = array[i];
+}
+}
+console.log(currentLargestNumber)
 
 // Add your code above this line
 
@@ -113,6 +129,31 @@ console.log('Problem 3:')
 
 // Add your code below this line
 
+function playGame(playerAChoice, playerBChoice){
+  if (playerAChoice === playerBChoice) {
+      return "tie!"
+  } else if (playerAChoice === "scissors") {
+      if (playerBChoice === "paper") {
+        return "player a wins!"
+    } else if (playerBChoice === "rock") {
+        return "player b wins!"
+    }
+} else if (playerAChoice === "paper") {
+    if (playerBChoice === "rock") {
+        return "player a wins!"
+    } else if (playerBChoice === "scissors") {
+        return "player b wins!"
+    }
+} else if (playerAChoice === "rock") {
+    if (playerBChoice === "scissors") {
+        return "player a wins!"
+    } else if (playerBChoice=== "paper") {
+        return "player b wins!"
+    }
+}
+}
+const result = playGame("rock", "paper")
+console.log(result)
 // Add your code above this line
 
 console.log('')
