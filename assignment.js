@@ -32,6 +32,13 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let multiply = num => {
+    let baseNumber = 0
+    for (let i = 1; i < 12; i++){
+    console.log(baseNumber = num * i) 
+}
+}
+multiply(6)
 // Add your code above this line
 
 console.log('')
@@ -65,7 +72,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+let numbers = [4,78,43,8, 123, 89, 675]
 
+let biggestNumber = Math.max(...numbers )
+
+console.log(biggestNumber)
 // Add your code above this line
 
 console.log('')
@@ -112,8 +123,41 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+function rockPaperScissors(playerA, playerB) {
+    if (playerA === "scissors" && playerB === "rock"){
+        return 'playerB wins'
+    } else if (playerA === "paper" && playerB === "rock"){
+        return 'playerA wins'
+    } else if(playerA === "rock" && playerB === "paper"){
+        return 'playerA wins'
+    } else if(playerA === "paper" && playerB === "scissors"){
+        return 'playerB wins'
+    } else if (playerA === "rock" && playerB === "scissors") {
+        return 'playerA wins'
+    } else if(playerA === "scissors" && playerB === "paper"){
+        return 'playerA wins'
+    } else if (playerA == playerB){
+        return "It's a tie"
+    } else {
+        console.log('something went wrong')
+    }
+}
 
+console.log(rockPaperScissors("paper", "rock"))
 // Add your code above this line
 
 console.log('')
 console.log('-----------------')
+
+
+// paper - rock DONE
+// paper - scissors DONE
+// paper - paper TIE
+
+// rock - scissors Done
+// rock - paper DONE
+// rock - rock TIE
+
+// scissors - paper 
+// scissors rock DONE
+// scissors - scissors TIE
